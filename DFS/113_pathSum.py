@@ -56,4 +56,4 @@ head.right.right = TreeNode(4)
 head.right.right.left = TreeNode(5)
 head.right.right.right = TreeNode(1)
 
-print(pathSum(None, 22))
+print(pathSum(head, 22))

@@ -10,14 +10,14 @@
 """
 
 
-# 要求不使用额外空间
 def findDuplicates(nums: list) -> list:
     ans = []
     for n in nums:
-        if nums[abs(n) - 1] > 0:
-            nums[abs(n) - 1] *= -1
+        idx = abs(n) - 1
+        if nums[idx] > 0:
+            nums[idx] *= -1
         else:
-            ans.append(abs(n))
+            ans.append(idx + 1)
     return ans
 
 
